@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="128" viewBox="0 0 320 128" fill="none">
+  <rect width="320" height="128" rx="20" fill="#111111"/>
+  <rect x="10" y="10" width="300" height="108" rx="14" fill="#1A1A1A"/>
+  <g fill="#F3BA2F">
+    <rect x="40" y="58" width="12" height="12" transform="rotate(45 40 58)"/>
+    <rect x="54" y="44" width="12" height="12" transform="rotate(45 54 44)"/>
+    <rect x="54" y="72" width="12" height="12" transform="rotate(45 54 72)"/>
+    <rect x="68" y="58" width="12" height="12" transform="rotate(45 68 58)"/>
+    <rect x="54" y="58" width="12" height="12" transform="rotate(45 54 58)"/>
+  </g>
+  <text x="92" y="58" fill="#F9FAFB" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">Binance</text>
+  <text x="92" y="82" fill="#A1A1AA" font-family="Inter, Arial, sans-serif" font-size="12">Pagos con criptoactivos</text>
+</svg>

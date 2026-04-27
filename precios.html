@@ -1,0 +1,344 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Planes - Puntual Acceso</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#e6e8ea",
+                    "secondary-fixed": "#d8e3fb",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed-variant": "#0031c4",
+                    "on-background": "#191c1e",
+                    "inverse-surface": "#2d3133",
+                    "surface-container": "#eceef0",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#e1f2ff",
+                    "on-secondary-container": "#586377",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#eff1f3",
+                    "surface-dim": "#d8dadc",
+                    "surface-tint": "#2e4edc",
+                    "background": "#f7f9fb",
+                    "surface-bright": "#f7f9fb",
+                    "on-tertiary": "#ffffff",
+                    "tertiary-container": "#00759f",
+                    "on-tertiary-fixed-variant": "#004c69",
+                    "primary-container": "#415fec",
+                    "on-secondary-fixed": "#111c2d",
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#434655",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#7bd0ff",
+                    "secondary-fixed-dim": "#bcc7de",
+                    "on-primary-container": "#efefff",
+                    "outline-variant": "#c3c6d7",
+                    "surface-container-highest": "#e0e3e5",
+                    "secondary": "#545f73",
+                    "primary": "#2043d3",
+                    "on-tertiary-fixed": "#001e2c",
+                    "surface-container-low": "#f2f4f6",
+                    "primary-fixed-dim": "#bac3ff",
+                    "surface-variant": "#e0e3e5",
+                    "on-secondary-fixed-variant": "#3c475a",
+                    "on-primary-fixed": "#001159",
+                    "error-container": "#ffdad6",
+                    "on-primary": "#ffffff",
+                    "secondary-container": "#d5e0f8",
+                    "primary-fixed": "#dee1ff",
+                    "outline": "#737686",
+                    "on-surface": "#191c1e",
+                    "inverse-primary": "#bac3ff",
+                    "tertiary": "#005b7c",
+                    "tertiary-fixed": "#c4e7ff",
+                    "surface": "#f7f9fb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "display": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(20px);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary-fixed selection:text-on-primary-fixed">
+<nav class="sticky top-0 w-full z-50 bg-[#f7f9fb]/70 dark:bg-[#191c1e]/70 backdrop-blur-xl shadow-[0_4px_24px_rgba(25,28,30,0.04)]">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+        <a class="text-xl font-bold tracking-tight text-blue-700 dark:text-blue-500 font-headline" href="index.html">
+            Puntual Acceso
+        </a>
+
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="font-headline text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-all duration-300" href="index.html">Inicio</a>
+            <a class="font-headline text-sm text-blue-700 dark:text-blue-400 font-semibold border-b-2 border-blue-600 pb-1" href="precios.html">Planes</a>
+        </div>
+
+        <div class="flex gap-4 items-center">
+            <a class="font-headline text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 rounded-lg px-4 py-2 transition-all active:scale-95" href="https://wa.me/584246164032" target="_blank" rel="noopener noreferrer">Iniciar Sesion</a>
+            <a class="bg-primary text-on-primary font-headline font-semibold text-sm px-6 py-2.5 rounded-xl transition-transform hover:opacity-90 active:scale-95 shadow-lg shadow-primary/20" href="https://wa.me/584246164032" target="_blank" rel="noopener noreferrer">Comenzar</a>
+        </div>
+    </div>
+</nav>
+<main class="pb-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 text-center mb-20">
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface mb-6" style="">
+                Planes a tu medida
+            </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-2xl mx-auto font-body leading-relaxed" style="">
+                Escalabilidad y precisión biométrica adaptada a las necesidades de su institución educativa o empresarial.
+            </p>
+</section>
+<!-- Pricing Bento Grid -->
+<section class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+<!-- Plan Demo -->
+<div class="bg-surface-container-lowest p-8 md:p-10 rounded-xl shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl" data-icon="school" style="">school</span>
+</div>
+<h2 class="font-headline text-2xl font-bold text-on-surface mb-2" style="">Demo</h2>
+<p class="text-on-surface-variant mb-8 font-body" style="">Ideal para validar el sistema en un salón de clases.</p>
+<div class="mb-10">
+<span class="text-4xl font-extrabold text-on-surface" style="">$0</span>
+<span class="text-on-surface-variant font-medium" style=""> /15 días</span>
+</div>
+<div class="space-y-4 mb-10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="">check_circle</span>
+<span class="text-on-surface" style="">Hasta 100 estudiantes</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="">check_circle</span>
+<span class="text-on-surface" style="">1 Dispositivo compatible</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="">check_circle</span>
+<span class="text-on-surface" style="">Notificaciones de WhatsApp y Telegram por 15 días</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="">check_circle</span>
+<span class="text-on-surface" style="">Acceso al panel de control</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="check_circle" style="">check_circle</span>
+<span class="text-on-surface" style="">Soporte inicial vía WhatsApp y Ticket</span>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low rounded-xl mb-10 text-sm text-on-surface-variant flex items-start gap-3">
+<span class="material-symbols-outlined text-primary scale-90" data-icon="info" style="">info</span>
+<p class="" style="">Activación remota: $39.99 por dispositivo (Pago único)</p>
+</div>
+<div class="p-4 bg-surface-container-low rounded-xl mb-10 text-sm text-on-surface-variant flex items-start gap-3">
+<span class="material-symbols-outlined text-primary scale-90" data-icon="verified_user" style="">verified_user</span>
+<p class="" style="">Garantía Puntual: Satisfacción técnica garantizada o le devolvemos su pago de activación del dispositivo durante el periodo de prueba (Condiciones aplican).</p>
+</div>
+<button class="w-full py-4 rounded-xl font-headline font-bold text-primary bg-surface-container-highest hover:bg-primary hover:text-white transition-all duration-300" style="">
+                    Comenzar gratis
+                </button>
+</div>
+<!-- Plan Profesional (Recommended) -->
+<div class="relative group">
+<!-- Glowing effect -->
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-tertiary rounded-xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+<div class="relative bg-surface-container-lowest p-8 md:p-10 rounded-xl shadow-lg border-2 border-primary/20">
+<div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl font-headline tracking-wider uppercase" style="">
+                        Recomendado
+                    </div>
+<h2 class="font-headline text-2xl font-bold text-on-surface mb-2" style="">Profesional</h2>
+<p class="text-on-surface-variant mb-8 font-body" style="">Para instituciones que buscan automatizar la seguridad y asistencia.</p>
+<div class="mb-10">
+<span class="text-4xl font-extrabold text-on-surface" style="">$0.75</span>
+<span class="text-on-surface-variant font-medium" style="">mensual por estudiante activo</span><br>
+</div>
+<div class="space-y-4 mb-10">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary font-bold" data-icon="verified" style="font-variation-settings: &quot;FILL&quot; 1;">verified</span>
+<span class="text-on-surface font-semibold" style="">Capacidad Ilimitada</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary" data-icon="add_task" style="">add_task</span>
+<span class="text-on-surface" style="">Compra 1 activación y la 2da es GRATIS</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="devices" style="">devices</span>
+<span class="text-on-surface" style="">Dispositivos Ilimitados</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="chat_bubble" style="">chat_bubble</span>
+<span class="text-on-surface" style="">Notificaciones de WhatsApp y Telegram sin limites</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="dashboard_customize" style="">dashboard_customize</span>
+<span class="text-on-surface" style="">Panel de control y reportes avanzados</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="support_agent" style="">support_agent</span>
+<span class="text-on-surface" style="">Soporte prioritario</span>
+</div>
+</div>
+<div class="p-4 bg-primary-container/10 rounded-xl mb-10 text-sm text-on-primary-fixed-variant flex items-start gap-3">
+<span class="material-symbols-outlined scale-90" data-icon="info" style="">info</span>
+<p class="" style="">Activación remota: $39.99 por dispositivo (Pago único)</p>
+</div>
+<a class="w-full py-4 rounded-xl font-headline font-bold text-white bg-gradient-to-r from-primary to-primary-container hover:shadow-xl hover:shadow-primary/30 transition-all duration-300 text-center block" href="https://wa.me/584246164032" style="">
+            Comenzar activación
+          </a>
+</div>
+</div>
+</section>
+<!-- Metodos de pago -->
+<section class="max-w-6xl mx-auto px-6 mt-24">
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-2xl p-8 md:p-10 shadow-sm">
+<div class="text-center mb-10">
+<p class="text-xs uppercase tracking-[0.16em] font-semibold text-primary">Metodos de pago</p>
+<h2 class="font-headline text-3xl md:text-4xl font-extrabold text-on-surface mt-2">Paga de la forma que prefieras</h2>
+<p class="text-on-surface-variant mt-3 max-w-2xl mx-auto">Aceptamos canales locales e internacionales para hacer tu proceso de activacion y recarga mas rapido.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low rounded-2xl p-6 flex flex-col items-center text-center">
+<img alt="Pago Movil" class="h-16 w-auto object-contain mb-4" src="images/payments/pago-movil.svg"/>
+<h3 class="font-headline text-lg font-bold text-on-surface">Pago Movil</h3>
+<p class="text-on-surface-variant text-sm mt-2">Transferencias inmediatas dentro de Venezuela.</p>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-6 flex flex-col items-center text-center">
+<img alt="Zinli" class="h-16 w-auto object-contain mb-4" src="images/payments/zinli.svg"/>
+<h3 class="font-headline text-lg font-bold text-on-surface">Zinli</h3>
+<p class="text-on-surface-variant text-sm mt-2">Pagos digitales en dolares con tarjeta virtual.</p>
+</div>
+<div class="bg-surface-container-low rounded-2xl p-6 flex flex-col items-center text-center">
+<img alt="Binance" class="h-16 w-auto object-contain mb-4" src="images/payments/binance.svg"/>
+<h3 class="font-headline text-lg font-bold text-on-surface">Binance</h3>
+<p class="text-on-surface-variant text-sm mt-2">Cripto pagos simples para clientes internacionales.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="max-w-4xl mx-auto px-6 mt-32">
+<div class="text-center mb-16">
+<h2 class="font-headline text-3xl font-bold text-on-surface" style="">Preguntas Frecuentes</h2>
+<div class="h-1 w-20 bg-primary mx-auto mt-4 rounded-full"></div>
+</div>
+<div class="space-y-6">
+<!-- FAQ Item 1 -->
+<div class="p-6 bg-surface-container-low rounded-xl">
+<h3 class="font-headline font-bold text-on-surface mb-3 flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-primary" data-icon="payments" style="">payments</span>
+                        ¿Cómo funciona la facturación por estudiante?
+                    </h3>
+<p class="text-on-surface-variant font-body leading-relaxed" style="">
+                        Facturamos mensualmente por cada estudiante activo en el sistema. En el Plan Profesional no hay limites de estudiantes o dispositivos.
+                    </p>
+</div>
+<!-- FAQ Item 2 -->
+<div class="p-6 bg-surface-container-low rounded-xl">
+<h3 class="font-headline font-bold text-on-surface mb-3 flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-primary" data-icon="settings_suggest" style="">settings_suggest</span>
+                        ¿Qué incluye el pago de activación inicial?
+                    </h3>
+<p class="text-on-surface-variant font-body leading-relaxed" style="">
+                        El pago de $39.99 por dispositivo cubre la configuración del puente de seguridad (Túnel Cloudflare), la vinculación del hardware con nuestra nube.</p>
+</div>
+<!-- FAQ Item 3 -->
+<div class="p-6 bg-surface-container-low rounded-xl">
+<h3 class="font-headline font-bold text-on-surface mb-3 flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-primary" data-icon="fingerprint" style="">fingerprint</span>
+                        ¿Necesito hardware específico o requisitos técnicos?
+                    </h3>
+<p class="text-on-surface-variant font-body leading-relaxed" style="">
+                        Sí. Se requiere una terminal facial Hikvision (Ver modelos compatibles) y una PC con Windows 10/11 en la misma red local que permanezca encendida durante el horario escolar. Nuestro equipo realiza la configuración de forma 100% remota vía AnyDesk.
+                    </p>
+</div>
+<!-- FAQ Item 4 -->
+<div class="p-6 bg-surface-container-low rounded-xl">
+<h3 class="font-headline font-bold text-on-surface mb-3 flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-primary" data-icon="chat" style="">chat</span>
+                        ¿Cómo llegan las notificaciones de WhatsApp?
+                    </h3>
+<p class="text-on-surface-variant font-body leading-relaxed" style="">
+                        En Demo, las notificaciones por WhatsApp y Telegram estan disponibles por 15 dias. En el Plan Profesional, WhatsApp y Telegram quedan habilitados sin limites y se envian de forma centralizada con el nombre de su institucion para mayor seguridad.
+                    </p>
+</div>
+<!-- FAQ Item 5 -->
+<div class="p-6 bg-surface-container-low rounded-xl">
+<h3 class="font-headline font-bold text-on-surface mb-3 flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-primary" data-icon="rocket_launch" style="">rocket_launch</span>
+        ¿Cómo inicio mi periodo de prueba?
+    </h3>
+<p class="text-on-surface-variant font-body leading-relaxed" style="">
+       Luego de registrarte, seleccionar el demo y haber configurado al menos un dispositivo, se habilita 15 días de acceso total gratuito al plan con capacidad maxima de 100 estudiantes. Durante este tiempo podrá validar la velocidad de las notificaciones y el uso del panel con su matrícula real.
+    </p>
+</div><!-- FAQ Item 6 -->
+<div class="p-6 bg-surface-container-low rounded-xl">
+<h3 class="font-headline font-bold text-on-surface mb-3 flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-primary" data-icon="upload_file" style="">upload_file</span>
+        ¿Cómo se realiza la carga de estudiantes?
+    </h3>
+<p class="text-on-surface-variant font-body leading-relaxed" style="">
+        El panel incluye una herramienta de migración masiva vía Excel totalmente gratuita. Usted solo carga su archivo y nuestro sistema vincula automáticamente a los alumnos, deberá cargar las fotos al sistema de forma manual igualmente.</p>
+</div><!-- FAQ Item 7 -->
+<div class="p-6 bg-surface-container-low rounded-xl">
+<h3 class="font-headline font-bold text-on-surface mb-3 flex items-center gap-2" style="">
+<span class="material-symbols-outlined text-primary" data-icon="account_balance_wallet" style="">account_balance_wallet</span>
+        ¿Cuánto debo cancelar luego de acabar el periodo de prueba?
+    </h3>
+<p class="text-on-surface-variant font-body leading-relaxed" style="">
+        Al finalizar los 15 días de prueba, para continuar con el servicio deberá realizar su primera recarga mensual. El monto se calcula multiplicando el número de estudiantes activos en su matrícula por $0.75. Una vez confirmado el pago, su acceso se mantendrá activo y sin interrupciones por los siguientes 30 días.
+    </p>
+</div></div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-6 mt-auto bg-slate-50 dark:bg-slate-950 font-['Manrope'] text-sm text-slate-500 dark:text-slate-400">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="font-bold text-blue-900 dark:text-blue-100" style="">
+                Puntual Acceso
+            </div>
+<div class="flex gap-8">
+<a class="hover:text-blue-700 dark:hover:text-blue-300 underline transition-all opacity-80 hover:opacity-100" href="privacidad.html" style="">Privacidad</a>
+<a class="hover:text-blue-700 dark:hover:text-blue-300 underline transition-all opacity-80 hover:opacity-100" href="terminos.html" style="">Terminos y Condiciones</a>
+<a class="hover:text-blue-700 dark:hover:text-blue-300 underline transition-all opacity-80 hover:opacity-100" href="https://wa.me/584246164032" rel="noopener noreferrer" style="" target="_blank">Contacto</a>
+</div>
+<div class="text-center md:text-right" style="">
+                © 2026 Puntual Acceso.<br>
+<span class="font-semibold text-red-700 dark:text-red-400 inline-flex items-center gap-1">Seguridad para lo que mas importa, con tecnologia hecha aqui. <img alt="Bandera de Venezuela" class="inline-block h-3 w-3 align-[-1px]" decoding="async" loading="lazy" src="https://emojigraph.org/media/twitter/flag-venezuela_1f1fb-1f1ea.png"></span></div>
+</div>
+</footer>
+<a
+    href="https://wa.me/584246164032"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Abrir WhatsApp"
+    class="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:scale-105 hover:bg-[#1faa53] focus:outline-none focus:ring-2 focus:ring-[#25D366]/60"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+        <path d="M12 2a10 10 0 0 0-8.66 15l-1.2 4.38a1 1 0 0 0 1.23 1.23L7.75 21A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-3.93-1.03 1 1 0 0 0-.76-.08l-2.48.68.68-2.48a1 1 0 0 0-.08-.76A8 8 0 1 1 12 20Zm4.13-5.3c-.23-.12-1.37-.67-1.58-.75-.21-.08-.37-.12-.52.12-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.98-.36-1.86-1.14-.69-.61-1.15-1.37-1.29-1.6-.13-.23-.01-.36.1-.47.1-.1.23-.27.35-.4.12-.14.15-.23.23-.38.08-.15.04-.29-.02-.4-.06-.12-.52-1.25-.71-1.71-.19-.46-.38-.4-.52-.4h-.44c-.15 0-.4.06-.6.29-.21.23-.79.77-.79 1.88s.81 2.18.92 2.33c.12.15 1.58 2.42 3.83 3.4.54.23.95.37 1.27.47.53.17 1.02.14 1.4.09.43-.06 1.37-.56 1.56-1.1.19-.54.19-1 .13-1.1-.06-.1-.21-.15-.44-.27Z" />
+    </svg>
+    <span class="hidden sm:inline">WhatsApp</span>
+</a>
+
+</body></html>

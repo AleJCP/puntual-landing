@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Puntual Acceso - Control de accesos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#bac3ff",
+                        "tertiary": "#005b7c",
+                        "background": "#f7f9fb",
+                        "on-tertiary-fixed": "#001e2c",
+                        "primary-fixed": "#dee1ff",
+                        "on-secondary-container": "#586377",
+                        "on-tertiary-container": "#e1f2ff",
+                        "surface-dim": "#d8dadc",
+                        "secondary": "#545f73",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c3c6d7",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#efefff",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#7bd0ff",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#eff1f3",
+                        "surface": "#f7f9fb",
+                        "on-primary-fixed": "#001159",
+                        "tertiary-container": "#00759f",
+                        "secondary-fixed-dim": "#bcc7de",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#c4e7ff",
+                        "outline": "#737686",
+                        "inverse-surface": "#2d3133",
+                        "on-secondary-fixed": "#111c2d",
+                        "on-background": "#191c1e",
+                        "surface-container": "#eceef0",
+                        "on-primary": "#ffffff",
+                        "primary": "#2043d3",
+                        "surface-tint": "#2e4edc",
+                        "inverse-primary": "#bac3ff",
+                        "surface-bright": "#f7f9fb",
+                        "on-tertiary-fixed-variant": "#004c69",
+                        "secondary-fixed": "#d8e3fb",
+                        "on-surface": "#191c1e",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "surface-container-low": "#f2f4f6",
+                        "on-surface-variant": "#434655",
+                        "secondary-container": "#d5e0f8",
+                        "surface-container-high": "#e6e8ea",
+                        "primary-container": "#415fec",
+                        "on-primary-fixed-variant": "#0031c4",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-variant": "#e0e3e5"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "display": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fb; }
+        h1, h2, h3, .font-manrope { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-panel { background: rgba(247, 249, 251, 0.7); backdrop-filter: blur(20px); }
+    </style>
+</head>
+<body class="text-on-background">
+<nav class="sticky top-0 w-full z-50 bg-[#f7f9fb]/70 dark:bg-[#191c1e]/70 backdrop-blur-xl shadow-[0_4px_24px_rgba(25,28,30,0.04)]">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+        <a class="text-xl font-bold tracking-tight text-blue-700 dark:text-blue-500 font-headline" href="index.html">
+            Puntual Acceso
+        </a>
+
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="font-headline text-sm text-blue-700 dark:text-blue-400 font-semibold border-b-2 border-blue-600 pb-1" href="index.html">Inicio</a>
+            <a class="font-headline text-sm text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-all duration-300" href="precios.html">Planes</a>
+        </div>
+
+        <div class="flex gap-4 items-center">
+            <a class="font-headline text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 rounded-lg px-4 py-2 transition-all active:scale-95" href="https://wa.me/584246164032" target="_blank" rel="noopener noreferrer">Iniciar Sesion</a>
+            <a class="bg-primary text-on-primary font-headline font-semibold text-sm px-6 py-2.5 rounded-xl transition-transform hover:opacity-90 active:scale-95 shadow-lg shadow-primary/20" href="https://wa.me/584246164032" target="_blank" rel="noopener noreferrer">Comenzar</a>
+        </div>
+    </div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-12 pb-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-6 z-10">
+<span class="inline-block py-1 px-3 mb-6 rounded-full bg-secondary-container text-on-secondary-container text-xs font-semibold tracking-wider uppercase">Biometría Inteligente</span>
+<h1 class="text-5xl md:text-6xl font-extrabold font-headline leading-tight tracking-tighter text-on-surface mb-6">
+                        Control de Identidad y <span class="text-primary">Asistencia Automatizado</span>
+</h1>
+<p class="text-lg text-on-surface-variant mb-10 leading-relaxed max-w-lg">
+                        El puente inteligente entre reconocimiento facial y notificaciones instantáneas para colegios y empresas.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-bold shadow-xl shadow-primary/25 hover:opacity-90 transition-all scale-100 active:scale-95" href="https://wa.me/584246164032">
+                            Solicitar Demo
+                        </a>
+</div>
+</div>
+<!-- Dashboard Preview Hero Visual -->
+<div class="md:col-span-6 relative">
+<div class="relative z-10 bg-surface-container-lowest p-4 rounded-[2rem] shadow-2xl shadow-on-surface/5 border border-transparent">
+<div class="flex items-center justify-between mb-4 px-2">
+<div class="flex gap-2">
+<div class="w-3 h-3 rounded-full bg-error/20"></div>
+<div class="w-3 h-3 rounded-full bg-primary/20"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary/20"></div>
+</div>
+<div class="text-[10px] font-bold text-on-surface-variant/50 uppercase tracking-widest">Live Monitoring</div>
+</div>
+<div class="space-y-3">
+<!-- Attendance Row 1 -->
+<div class="flex items-center gap-4 p-3 bg-surface-container-low rounded-2xl">
+<div class="relative h-12 w-12 rounded-xl overflow-hidden bg-surface-dim">
+<img alt="close-up portrait of a young man for biometric facial recognition system identification" class="h-full w-full object-cover" src="images/landing/3.png"/>
+<div class="absolute inset-0 border-2 border-transparent"></div>
+</div>
+<div class="flex-1">
+<div class="text-sm font-bold text-on-surface">Marcos Rodríguez</div>
+<div class="text-[10px] text-on-surface-variant">ID: #8829 • 08:02 AM</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-2 py-1 bg-green-100 text-green-700 text-[9px] font-bold rounded-md mb-1">EXITOSO</span>
+<div class="flex items-center gap-1 text-[#25D366]">
+<span class="material-symbols-outlined text-sm">chat_bubble</span>
+<span class="text-[9px] font-bold">WhatsApp Enviado</span>
+</div>
+</div>
+</div>
+<!-- Attendance Row 2 -->
+<div class="flex items-center gap-4 p-3 bg-white rounded-2xl shadow-sm">
+<div class="relative h-12 w-12 rounded-xl overflow-hidden bg-surface-dim">
+<img alt="close-up portrait of a professional woman with neutral expression for facial recognition identification" class="h-full w-full object-cover" src="images/landing/1.png"/>
+<div class="absolute inset-0 border-2 border-transparent"></div>
+</div>
+<div class="flex-1">
+<div class="text-sm font-bold text-on-surface">Elena Valdivia</div>
+<div class="text-[10px] text-on-surface-variant">ID: #4431 • 08:05 AM</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="px-2 py-1 bg-green-100 text-green-700 text-[9px] font-bold rounded-md mb-1">EXITOSO</span>
+<div class="flex items-center gap-1 text-[#25D366]">
+<span class="material-symbols-outlined text-sm">chat_bubble</span>
+<span class="text-[9px] font-bold">WhatsApp Enviado</span>
+</div>
+</div>
+</div>
+<!-- Attendance Row 3 -->
+<div class="flex items-center gap-4 p-3 bg-surface-container-low rounded-2xl opacity-60">
+<div class="relative h-12 w-12 rounded-xl overflow-hidden bg-surface-dim">
+<img alt="profile photo of male student for security system logs" class="h-full w-full object-cover" src="images/landing/2.png"/>
+</div>
+<div class="flex-1">
+<div class="text-sm font-bold text-on-surface">Javier Solis</div>
+<div class="text-[10px] text-on-surface-variant">ID: #9920 • 08:12 AM</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">schedule</span>
+<span class="text-[9px] font-bold">Processing</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-10 -left-10 w-60 h-60 bg-tertiary/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Features Bento Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold font-headline text-on-surface mb-4">Potencia y Simplicidad</h2>
+<p class="text-on-surface-variant max-w-xl">Tecnología de grado clínico diseñada para la administración moderna de accesos.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Feature 1: Hikvision -->
+<div class="md:col-span-8 group relative overflow-hidden bg-surface-container-low rounded-[2rem] p-8 transition-all hover:shadow-xl hover:shadow-primary/5">
+<div class="relative z-10 flex flex-col h-full">
+<span class="material-symbols-outlined text-primary text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">router</span>
+<h3 class="text-2xl font-bold font-headline mb-4">Integración con Hikvision</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">
+                                Conexión nativa con hardware líder sin complicaciones de red. Olvídate de configuraciones IP complejas; sincronizamos tus terminales faciales en minutos.
+                            </p>
+<div class="mt-8 pt-8 border-t border-outline-variant/10">
+<div class="flex gap-4">
+<div class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-on-surface shadow-sm">Plug &amp; Play</div>
+<div class="px-4 py-2 bg-white rounded-xl text-xs font-bold text-on-surface shadow-sm">Firmware Sync</div>
+</div>
+</div>
+<div class="mt-6 space-y-3">
+<p class="text-xs font-semibold text-error/80 uppercase tracking-wider">
+        Solo compatible con Terminales faciales Marca Hikvision.
+    </p>
+<button aria-controls="deviceRequirementsModal" aria-expanded="false" class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline" data-modal-open="deviceRequirementsModal" type="button">
+    Ver lista de disp. compatibles
+        <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div></div>
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 group-hover:opacity-20 transition-opacity">
+<img alt="professional security camera dome installed on a clean white ceiling" class="object-cover h-full w-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoBIl1pLjYr8clSa1UPQ4BojFvAnMbRUe7tuGvnByUnGoTVL6d_DtUZzb_5YfZoq4z50PnLF3H2DS8jLYLzsXMYyyuPLS0ZvoKCcH5yh2c6DWthbA4XLYAbBv9wPleOgvw8UuIAg5WbYFdc7JCfJcMw28sv3kJhNsR4WXDW-wDD-JFxOrf7OWITv6tuOyOubRdeC8N3sS7Qj3BVkMJTFyaQtzucwjLq1B57ICNY7pq5PCkUvLNXVHNna_b6m7_TQV-AALEXPhdBS8"/>
+</div>
+</div>
+<!-- Feature 2: WhatsApp -->
+<div class="md:col-span-4 bg-gradient-to-br from-primary to-primary-container rounded-[2rem] p-8 text-on-primary shadow-xl shadow-primary/20">
+<span class="material-symbols-outlined text-4xl mb-6" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<h3 class="text-2xl font-bold font-headline mb-4">Evidencia Instantánea</h3>
+<p class="opacity-90 leading-relaxed text-sm">
+                            Envío automático de la fotografía del evento vía WhatsApp a los representantes o administradores en tiempo real. Tranquilidad total en cada acceso.
+                        </p>
+<div class="mt-12 p-4 bg-white/10 rounded-2xl backdrop-blur-md">
+<div class="flex items-center gap-3">
+<div class="w-2 h-2 rounded-full bg-[#25D366] animate-pulse"></div>
+<span class="text-[10px] font-bold tracking-widest uppercase">CONEXION EN TIEMPO REAL</span>
+</div>
+</div>
+</div>
+<!-- Feature 3: Tunnels -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-[2rem] p-8 border border-surface-container-low shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-6">vpn_lock</span>
+<h3 class="text-xl font-bold font-headline mb-4">Túneles Seguros</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Eliminación de barreras técnicas de red para una implementación rápida. No requiere IP pública ni apertura de puertos vulnerables.
+                        </p>
+</div>
+<!-- Feature 4: Scalability -->
+<div class="md:col-span-8 bg-surface-container-high rounded-[2rem] p-8 flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<span class="material-symbols-outlined text-on-surface-variant text-4xl mb-6">cloud_done</span>
+<h3 class="text-2xl font-bold font-headline mb-4">Crecemos contigo</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                Diseñado para crecer con tu institución. Desde una oficina pequeña hasta campus universitarios con múltiples sedes y miles de usuarios.
+                            </p>
+</div>
+<div class="w-full md:w-1/3 aspect-video bg-surface-container-low rounded-2xl overflow-hidden shadow-inner">
+<img alt="abstract digital data network visualization with glowing blue nodes and connections" class="w-full h-full object-cover mix-blend-multiply opacity-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd5OmeYJb3x7v8WrxA8iScctaJddj6mW6jsyPLL0fRuilgJIIJDh2DioObKLyoP9slWQ9JATku3lrZ2GI_1ls_UvO0XZzxu7vwsNaU1rKtTUJYN7JdlbZ-GXxEZAUMw7UYHKGQIX40GhEVM4H7KoRkx4tz3PGq9JPXzNpNDqYu2IkT6MHtq5s8qYMFd_3hJ_EQFFHFhj4zQraQE7ipTj1krplgQzoRZiBYTO4TM9OUPGiqwCeHEsnrbLEBAK_Yaj2INfET21klAxA"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ¿Para quién sirve? Section -->
+<section class="py-24 bg-background overflow-hidden">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16 text-center">
+<h2 class="text-3xl md:text-4xl font-extrabold font-headline text-on-surface mb-4">¿Para quién sirve?</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Soluciones diseñadas específicamente para los entornos más exigentes de control de acceso.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-12">
+<!-- Escuelas Card -->
+<div class="group bg-surface-container-lowest rounded-[3rem] overflow-hidden shadow-sm border border-outline-variant/10 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Happy, relieved parents looking at their smartphone with a smile, feeling secure and peaceful" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTw6CNDC-I1ZbXxSjNZfnz3P-RlxgUreIE4YZrN8Chk2ks8VhuAJ9gEGTk19QIFp-SE-SxfsmjZUqYMy5YW-7AMzinfiZu3wUxzjAW1fy-ckkgk3WFwB2nVXMPP7IOhlQiOUI8RQpJWrjqzBBvJYXMD6q_woX9ZUfzhJQiK87Gd7kCVkYYZcgr6C0fm2TfIKZaKE1KDPl-yVNYKKhXdjqsPezS_lDyegqKD3WC_2-EOtPOmoznBhHrKHqkAzmr1nyaoVbLz5ommZQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent opacity-60"></div>
+</div>
+<div class="p-10">
+<div class="inline-flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">school</span>
+<span class="text-primary font-bold uppercase tracking-widest text-xs">Sector Educativo</span>
+</div>
+<h3 class="text-3xl font-extrabold font-headline mb-4 text-on-surface">Escuelas</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+                        Tranquilidad para los representantes. Notificaciones instantáneas y evidencia visual que garantizan la seguridad de los estudiantes en cada ingreso y salida.
+                    </p>
+<div class="flex items-center text-primary font-bold gap-2 group/btn cursor-pointer">                         
+</div>
+</div>
+</div>
+<!-- Oficinas Card -->
+<div class="group bg-surface-container-lowest rounded-[3rem] overflow-hidden shadow-sm border border-outline-variant/10 hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500">
+<div class="aspect-[4/3] overflow-hidden relative">
+<img alt="Confident, smiling male business owner in a modern office looking at a tablet or laptop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo11BLS6E-ThpYqphnAXwf6IkkyzK0TQuyGT8kevjw3P-buMN5QVcOMc4my-6MNRUNC9ZHgjmXfiL47PumniCm_YKHj5MeN0_NIR0IjUoRKAu_DDY_xRqw56A4WOYCf_DmPxLZL-rt9jBoSQLphxYRlNwcEK4IRJwsrm2ubDE-Wt5yVgrcdBjw1sv2-AqDDwxK7yMUgKwK2HIA8IPbhQ51GGiGb65KNX6iFOYuDq4vkVu3TgilI31XsBjFtII3tlurBkfssOsFRD4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent opacity-60"></div>
+</div>
+<div class="p-10">
+<div class="inline-flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-tertiary" style="font-variation-settings: 'FILL' 1;">business_center</span>
+<span class="text-tertiary font-bold uppercase tracking-widest text-xs">Sector Corporativo</span>
+</div>
+<h3 class="text-3xl font-extrabold font-headline mb-4 text-on-surface">Oficinas</h3>
+<p class="text-on-surface-variant text-lg leading-relaxed mb-6">
+                        Monitoreo para dueños de negocio. Control total sobre la asistencia y puntualidad de los colaboradores, optimizando la gestión administrativa y operativa.
+                    </p>
+<div class="flex items-center text-primary font-bold gap-2 group/btn cursor-pointer">                         
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Flow Section -->
+<section class="py-24 bg-white relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 text-center">
+<h2 class="text-3xl font-extrabold font-headline mb-16">Ecosistema Puntual Acceso</h2>
+<div class="relative flex flex-col md:flex-row items-center justify-between gap-12">
+<!-- Step 1 -->
+<div class="flex-1 flex flex-col items-center">
+<div class="w-24 h-24 rounded-3xl bg-primary/5 flex items-center justify-center mb-6 shadow-inner">
+<span class="material-symbols-outlined text-primary text-4xl">face_6</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Lectura Facial</h4>
+<p class="text-on-surface-variant text-xs">Captura biométrica Hikvision de alta precisión.</p>
+</div>
+<div class="hidden md:block w-12 h-px bg-gradient-to-r from-primary/20 to-primary"></div>
+<!-- Step 2 -->
+<div class="flex-1 flex flex-col items-center">
+<div class="w-24 h-24 rounded-3xl bg-primary/5 flex items-center justify-center mb-6 shadow-inner">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">cloud_queue</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Procesamiento Cloud</h4>
+<p class="text-on-surface-variant text-xs">Validación instantánea y registro en la nube.</p>
+</div>
+<div class="hidden md:block w-12 h-px bg-gradient-to-r from-primary to-primary/20"></div>
+<!-- Step 3 -->
+<div class="flex-1 flex flex-col items-center">
+<div class="w-24 h-24 rounded-3xl bg-primary/5 flex items-center justify-center mb-6 shadow-inner">
+<span class="material-symbols-outlined text-primary text-4xl">notifications_active</span>
+</div>
+<h4 class="font-bold text-lg mb-2">Notificación WhatsApp</h4>
+<p class="text-on-surface-variant text-xs">Envío de alerta con evidencia fotográfica.</p>
+</div>
+</div>
+<!-- Technical Visual -->
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="relative bg-on-background rounded-[3rem] p-12 md:p-24 text-center overflow-hidden">
+<!-- Background texture -->
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-primary-container via-transparent to-transparent"></div>
+<h2 class="relative z-10 text-4xl md:text-5xl font-extrabold font-headline text-white mb-8">
+                        Lleva la seguridad de tu institución al siguiente nivel.
+                    </h2>
+<p class="relative z-10 text-white/60 text-lg mb-12 max-w-2xl mx-auto">
+                        Únete a las decenas de organizaciones que ya confían en Puntual Acceso para su control biométrico diario.
+                    </p>
+<div class="relative z-10 flex flex-wrap justify-center gap-6">
+<a class="bg-primary text-on-primary px-10 py-5 rounded-2xl font-bold hover:bg-primary-container transition-all shadow-2xl shadow-primary/40" href="https://wa.me/584246164032">
+                            Comenzar ahora
+                        </a>
+<a class="bg-white/10 text-white px-10 py-5 rounded-2xl font-bold hover:bg-white/20 transition-all backdrop-blur-sm" href="https://wa.me/584246164032" rel="noopener noreferrer" target="_blank">
+                            Hablar con un asesor
+                        </a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<div aria-hidden="true" class="fixed inset-0 z-[70] hidden items-center justify-center p-4" data-modal="deviceRequirementsModal" id="deviceRequirementsModal" role="dialog">
+<div class="absolute inset-0 bg-slate-900/60 backdrop-blur-[2px]" data-modal-close="deviceRequirementsModal"></div>
+<div class="relative w-full max-w-2xl rounded-2xl bg-white p-6 md:p-8 shadow-2xl border border-slate-200">
+<div class="flex items-start justify-between gap-4">
+<div>
+<p class="text-xs uppercase tracking-[0.16em] font-semibold text-primary">Compatibilidad de dispositivos</p>
+<h3 class="mt-2 text-2xl font-headline font-extrabold text-slate-900">Requerimientos para terminales</h3>
+</div>
+<button aria-label="Cerrar modal" class="inline-flex h-9 w-9 items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100 hover:text-slate-700" data-modal-close="deviceRequirementsModal" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+
+<div class="mt-5 space-y-4 text-sm leading-7 text-slate-700">
+<p>
+                Esta plataforma funciona unicamente con <strong>terminales faciales Hikvision</strong> para garantizar integracion estable con biometria facial y trazabilidad de eventos.
+            </p>
+<p>
+                <strong>Modelos antiguos que usan huella o tarjeta unicamente no son compatibles</strong> con Puntual Acceso.
+            </p>
+<p>
+                Consulta la lista oficial de equipos de la serie compatible en Hikvision:
+                <a class="font-semibold text-primary hover:underline break-all" href="https://www.hikvision.com/en/products/Access-Control-Products/Face-Recognition-Terminals/?category=Access+Control+&subCategory=Face+Recognition+Terminals&checkedSubSeries=NONE&series=Value+Series" rel="noopener noreferrer" target="_blank">Ver lista oficial de terminales faciales compatibles</a>
+            </p>
+</div>
+
+<div class="mt-6 flex justify-end">
+<button class="rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-white hover:opacity-90" data-modal-close="deviceRequirementsModal" type="button">
+                Entendido
+            </button>
+</div>
+</div>
+</div>
+
+<script>
+    (() => {
+        const openers = document.querySelectorAll('[data-modal-open]');
+        const closers = document.querySelectorAll('[data-modal-close]');
+
+        const openModal = (id) => {
+            const modal = document.getElementById(id);
+            if (!modal) return;
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            modal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('overflow-hidden');
+            const trigger = document.querySelector('[data-modal-open="' + id + '"]');
+            if (trigger) trigger.setAttribute('aria-expanded', 'true');
+        };
+
+        const closeModal = (id) => {
+            const modal = document.getElementById(id);
+            if (!modal) return;
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('overflow-hidden');
+            const trigger = document.querySelector('[data-modal-open="' + id + '"]');
+            if (trigger) trigger.setAttribute('aria-expanded', 'false');
+        };
+
+        openers.forEach((button) => {
+            button.addEventListener('click', () => openModal(button.dataset.modalOpen));
+        });
+
+        closers.forEach((button) => {
+            button.addEventListener('click', () => closeModal(button.dataset.modalClose));
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key !== 'Escape') return;
+            const opened = document.querySelector('[data-modal]:not(.hidden)');
+            if (opened) closeModal(opened.id);
+        });
+    })();
+</script>
+
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950">
+<div class="tonal-shift bg-slate-100 dark:bg-slate-900 w-full py-12 px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-manrope font-bold text-slate-900 dark:text-slate-100 text-lg">
+                    Puntual Acceso
+                </div>
+<p class="font-manrope text-sm tracking-wide text-slate-500 dark:text-slate-400 max-w-xs text-center md:text-left">
+                    © 2026 Puntual Acceso. Seguridad e Identidad Digital.
+                </p>
+<p class="font-manrope text-xs font-semibold text-red-700 dark:text-red-400 max-w-sm text-center md:text-left">
+                    Seguridad para lo que mas importa, con tecnologia hecha aqui. <img alt="Bandera de Venezuela" class="inline-block h-3 w-3 align-[-1px]" decoding="async" loading="lazy" src="https://emojigraph.org/media/twitter/flag-venezuela_1f1fb-1f1ea.png">
+                </p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-colors" href="privacidad.html">Privacidad</a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-colors" href="terminos.html">Terminos y Condiciones</a>
+<a class="font-manrope text-sm text-slate-500 dark:text-slate-400 hover:text-blue-600 transition-colors" href="https://wa.me/584246164032" rel="noopener noreferrer" target="_blank">Contacto</a>
+</div>
+</div>
+</div>
+</footer>
+<a
+    href="https://wa.me/584246164032"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Abrir WhatsApp"
+    class="fixed bottom-5 right-5 z-50 inline-flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:scale-105 hover:bg-[#1faa53] focus:outline-none focus:ring-2 focus:ring-[#25D366]/60"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
+        <path d="M12 2a10 10 0 0 0-8.66 15l-1.2 4.38a1 1 0 0 0 1.23 1.23L7.75 21A10 10 0 1 0 12 2Zm0 18a8 8 0 0 1-3.93-1.03 1 1 0 0 0-.76-.08l-2.48.68.68-2.48a1 1 0 0 0-.08-.76A8 8 0 1 1 12 20Zm4.13-5.3c-.23-.12-1.37-.67-1.58-.75-.21-.08-.37-.12-.52.12-.15.23-.6.75-.73.9-.13.15-.27.17-.5.06-.23-.12-.98-.36-1.86-1.14-.69-.61-1.15-1.37-1.29-1.6-.13-.23-.01-.36.1-.47.1-.1.23-.27.35-.4.12-.14.15-.23.23-.38.08-.15.04-.29-.02-.4-.06-.12-.52-1.25-.71-1.71-.19-.46-.38-.4-.52-.4h-.44c-.15 0-.4.06-.6.29-.21.23-.79.77-.79 1.88s.81 2.18.92 2.33c.12.15 1.58 2.42 3.83 3.4.54.23.95.37 1.27.47.53.17 1.02.14 1.4.09.43-.06 1.37-.56 1.56-1.1.19-.54.19-1 .13-1.1-.06-.1-.21-.15-.44-.27Z" />
+    </svg>
+    <span class="hidden sm:inline">WhatsApp</span>
+</a>
+
+</body></html>
